@@ -8,11 +8,17 @@ from sys import exit
 inputs = []
 root = Tk()
 root.title("Set Configurations")
-height_label = Label(root, font=("Courier New", 10), text="Window Height:".rjust(20))
+height_label = Label(
+    root, font=("Courier New", 10), text="Window Height(pixels):".rjust(20)
+)
 height_entry = Entry(root)
-width_label = Label(root, font=("Courier New", 10), text="Window Width:".rjust(20))
+width_label = Label(
+    root, font=("Courier New", 10), text="Window Width(pixels):".rjust(20)
+)
 width_entry = Entry(root)
-gridsize_label = Label(root, font=("Courier New", 10), text="Grid Size:".rjust(20))
+gridsize_label = Label(
+    root, font=("Courier New", 10), text="Player Size(pixels):".rjust(20)
+)
 gridsize_entry = Entry(root)
 speed_label = Label(
     root, font=("Courier New", 10), text="Speed(milliseconds):".rjust(20)
